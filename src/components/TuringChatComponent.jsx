@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { MainContainer, ChatContainer, ConversationList, Conversation, MessageList, MessageInput, ConversationHeader, Message } from "@chatscope/chat-ui-kit-react";
-import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import { MainContainer, ChatContainer, MessageList, MessageInput, Message } from "@chatscope/chat-ui-kit-react";
 import axios from "axios";
+import "./chat.css";
 
-const ChatComponent = () => {
+const TuringChatComponent = () => {
   const [messages, setMessages] = useState([]);
 
-  const API_ENDPOINT = "http://127.0.0.1:8000/query/norwegianwood/";
+  const API_ENDPOINT = "http://127.0.0.1:8000/query/turingpaper/";
 
   const sendMessage = (message) => {
     const newMessage = {
@@ -27,12 +27,12 @@ const ChatComponent = () => {
       })
       .then((response) => {
         const responseData = response.data;
-        const incomingMessages = responseData.answers.map((answer) => ({
+        const incomingMessages = responseData.answers.map((answer, index) => ({
           message: answer,
-          sender: "Receiver",
+          sender: "Turing",
           sentTime: new Date().toLocaleString(),
           direction: "incoming",
-          position: "single",
+          position: index === responseData.answers.length - 1 ? "last" : "single",
         }));
         setMessages((prevMessages) => [...prevMessages, ...incomingMessages]);
       })
@@ -44,8 +44,8 @@ const ChatComponent = () => {
   return (
     <div className="chatPage-div">
       <MainContainer>
-        {/* The ConversationList and ConversationHeader are already in the App.js */}
         <ChatContainer>
+          {/* No ConversationHeader */}
           <MessageList>
             {messages.map((msg, index) => (
               <Message
@@ -60,11 +60,12 @@ const ChatComponent = () => {
               />
             ))}
           </MessageList>
-          <MessageInput placeholder="Chat with your Data....." onSend={sendMessage} />
+          {/* MessageInput for Turing */}
+          <MessageInput placeholder="Chat with Turing....." onSend={sendMessage} />
         </ChatContainer>
       </MainContainer>
     </div>
   );
 };
 
-export default ChatComponent;
+export default TuringChatComponent;
