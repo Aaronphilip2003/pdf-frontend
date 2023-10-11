@@ -1,20 +1,11 @@
-// ChatsPage.js
 import React, { useState } from "react";
-import {
-  MainContainer,
-  Sidebar,
-  ChatContainer,
-  ConversationList,
-  Conversation,
-  MessageList,
-  ConversationHeader,
-} from "@chatscope/chat-ui-kit-react";
 import ChatComponent from "./components/ChatComponent";
 import TuringChatComponent from "./components/TuringChatComponent";
 import PsychChatComponent from "./components/PsychChatComponent";
 import EightyChatComponent from "./components/EightyChatComponent";
 import JHChatComponent from "./components/JHChatComponent";
-import MOVChatComponent from "./components/MOVChatComponent"; // Import your MOVChatComponent
+import MOVChatComponent from "./components/MOVChatComponent";
+import NasaChatComponent from "./components/NasaChatComponent";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function ChatsPage() {
@@ -25,57 +16,82 @@ function ChatsPage() {
   };
 
   return (
-    <MainContainer>
-      <Sidebar position="left">
-        <ConversationList>
-          <Conversation
-            name="Norwegian Wood"
+    <div className="flex h-screen bg-gray-100">
+      <div className="w-1/4 bg-gray-200 border-r">
+        <ul>
+          <li
             onClick={() => handleChatClick("Norwegian Wood")}
-            active={activeChat === "Norwegian Wood"}
-          />
-          <Conversation
-            name="Turing"
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "Norwegian Wood" && "bg-gray-300"
+            }`}
+          >
+            Norwegian Wood
+          </li>
+          <li
             onClick={() => handleChatClick("Turing")}
-            active={activeChat === "Turing"}
-          />
-          <Conversation
-            name="Psychology Of Money"
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "Turing" && "bg-gray-300"
+            }`}
+          >
+            Turing
+          </li>
+          <li
             onClick={() => handleChatClick("Psych")}
-            active={activeChat === "Psych"}
-          />
-          <Conversation
-            name="Eighty"
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "Psych" && "bg-gray-300"
+            }`}
+          >
+            Psychology Of Money
+          </li>
+          <li
             onClick={() => handleChatClick("Eighty")}
-            active={activeChat === "Eighty"}
-          />
-          <Conversation
-            name="JH"
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "Eighty" && "bg-gray-300"
+            }`}
+          >
+            Eighty
+          </li>
+          <li
             onClick={() => handleChatClick("JH")}
-            active={activeChat === "JH"}
-          />
-          {/* Add a Conversation for MOV */}
-          <Conversation
-            name="MOV"
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "JH" && "bg-gray-300"
+            }`}
+          >
+            JH
+          </li>
+          <li
             onClick={() => handleChatClick("MOV")}
-            active={activeChat === "MOV"}
-          />
-        </ConversationList>
-      </Sidebar>
-      <ChatContainer>
-        <ConversationHeader>
-          <ConversationHeader.Content userName={activeChat} />
-        </ConversationHeader>
-        <MessageList>
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "MOV" && "bg-gray-300"
+            }`}
+          >
+            MOV
+          </li>
+          <li
+            onClick={() => handleChatClick("Nasa")}
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "Nasa" && "bg-gray-300"
+            }`}
+          >
+            Nasa
+          </li>
+        </ul>
+      </div>
+      <div className="w-3/4 bg-white">
+        <div className="bg-indigo-500 text-white p-4">
+          {activeChat}
+        </div>
+        <div className="p-4">
           {activeChat === "Norwegian Wood" && <ChatComponent />}
           {activeChat === "Turing" && <TuringChatComponent />}
           {activeChat === "Psych" && <PsychChatComponent />}
           {activeChat === "Eighty" && <EightyChatComponent />}
           {activeChat === "JH" && <JHChatComponent />}
-          {/* Render MOVChatComponent when activeChat is "MOV" */}
           {activeChat === "MOV" && <MOVChatComponent />}
-        </MessageList>
-      </ChatContainer>
-    </MainContainer>
+          {activeChat === "Nasa" && <NasaChatComponent />}
+        </div>
+      </div>
+    </div>
   );
 }
 

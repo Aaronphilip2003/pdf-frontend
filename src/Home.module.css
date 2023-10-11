@@ -1,0 +1,259 @@
+.homeChild {
+    position: absolute;
+    top: 38.31rem;
+    left: 3.19rem;
+    border-radius: 50px;
+    background-color: var(--color-gray);
+    width: 29.06rem;
+    height: 20.75rem;
+  }
+  .homeItem {
+    position: absolute;
+    top: 0;
+    left: 54.75rem;
+    background-color: rgba(156, 176, 31, 0.47);
+    width: 35.25rem;
+    height: 64rem;
+  }
+  .fluentify,
+  .understandingEach {
+    margin: 0;
+    position: absolute;
+    left: 3.19rem;
+    display: inline-block;
+  }
+  .understandingEach {
+    top: 11.56rem;
+    font-size: 5.69rem;
+    font-weight: 400;
+    font-family: var(--font-luckiest-guy);
+    color: var(--color-white);
+    width: 49.63rem;
+    height: 24.56rem;
+  }
+  .fluentify {
+    top: 2.69rem;
+    font-size: var(--font-size-21xl);
+    font-weight: 800;
+    font-family: inherit;
+    width: 10.25rem;
+    height: 3.19rem;
+  }
+  .quizzes1 {
+    margin-bottom: false;
+  }
+  .quizzes {
+    margin: 0;
+    padding-left: var(--padding-24xl);
+  }
+  .blankLine {
+    margin: 0;
+  }
+  .quizzesLiteratureReviewContainer {
+    margin: 0;
+    position: absolute;
+    top: 40.56rem;
+    left: 3.19rem;
+    font-size: var(--font-inherit);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: var(--font-inherit);
+  }
+  .homeInner {
+    position: absolute;
+    top: 40.66rem;
+    left: 15.69rem;
+    width: 3.22rem;
+    height: 2.3rem;
+    cursor: pointer;
+  }
+  .arrowIcon,
+  .homeChild1,
+  .homeChild2 {
+    position: absolute;
+    top: 54.85rem;
+    left: 23.44rem;
+    width: 3.22rem;
+    height: 2.3rem;
+  }
+  .homeChild1,
+  .homeChild2 {
+    top: 50.04rem;
+    left: 19.88rem;
+  }
+  .homeChild2 {
+    top: 45.29rem;
+    left: 24.94rem;
+  }
+  .contact,
+  .features,
+  .pricing,
+  .signIn,
+  .text {
+    position: absolute;
+    top: 3.5rem;
+    left: 17.19rem;
+    font-weight: 800;
+  }
+  .contact,
+  .pricing,
+  .signIn,
+  .text {
+    top: 3.56rem;
+    left: 26.25rem;
+  }
+  .contact,
+  .signIn,
+  .text {
+    left: 34.31rem;
+  }
+  .signIn,
+  .text {
+    top: 3.5rem;
+    left: 43rem;
+  }
+  .text {
+    top: 2.75rem;
+    left: 29.56rem;
+    font-size: var(--font-size-21xl);
+  }
+  .frameIcon {
+    position: absolute;
+    top: 2.69rem;
+    left: 56.44rem;
+    width: 14.06rem;
+    height: 29.25rem;
+  }
+  .groupIcon {
+    position: absolute;
+    height: 45.99%;
+    width: 9.93%;
+    top: 20.8%;
+    right: 2.22%;
+    bottom: 33.21%;
+    left: 87.85%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .frameChild {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #f79327;
+    width: 11.63rem;
+    height: 7.38rem;
+  }
+  .supDawg {
+    margin: 0;
+    position: absolute;
+    top: 0.81rem;
+    left: 2.5rem;
+    font-size: inherit;
+    font-weight: 900;
+    font-family: inherit;
+    display: inline-block;
+    width: 9.5rem;
+  }
+  .ellipseParent,
+  .frameItem {
+    position: absolute;
+    height: 7.38rem;
+  }
+  .ellipseParent {
+    top: 2.69rem;
+    left: 66.38rem;
+    width: 12rem;
+    font-size: var(--font-size-17xl);
+    color: var(--color-white);
+  }
+  .frameItem {
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #0b7a71;
+    width: 11.63rem;
+  }
+  .dawgDogContainer {
+    position: absolute;
+    top: 1rem;
+    left: 2.75rem;
+    font-weight: 900;
+    display: inline-block;
+    width: 9.5rem;
+  }
+  .ellipseGroup {
+    position: absolute;
+    top: 17.56rem;
+    left: 66.25rem;
+    width: 12.25rem;
+    height: 7.38rem;
+    font-size: var(--font-size-17xl);
+    color: var(--color-white);
+  }
+  .rectangleDiv {
+    position: absolute;
+    top: 45rem;
+    left: 57.5rem;
+    border-radius: 167px;
+    background-color: var(--color-gray);
+    width: 29.06rem;
+    height: 16.81rem;
+  }
+  .blankLine3 {
+    margin: 0;
+    font-family: var(--font-luckiest-guy);
+  }
+  .fluentifyIsAGameChangingE {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .sashaCFluentifyContainer {
+    position: absolute;
+    top: 46.94rem;
+    left: 62rem;
+    display: inline-block;
+    width: 20rem;
+  }
+  .homeChild3,
+  .homeChild4,
+  .homeChild5,
+  .homeChild6,
+  .starIcon {
+    position: absolute;
+    top: 48.69rem;
+    left: 62.04rem;
+    width: 1.69rem;
+    height: 1.69rem;
+  }
+  .homeChild3,
+  .homeChild4,
+  .homeChild5,
+  .homeChild6 {
+    left: 69.79rem;
+  }
+  .homeChild4,
+  .homeChild5,
+  .homeChild6 {
+    left: 67.85rem;
+  }
+  .homeChild5,
+  .homeChild6 {
+    left: 65.92rem;
+  }
+  .homeChild6 {
+    left: 63.98rem;
+  }
+  .home {
+    position: relative;
+    background-color: #8fcedc;
+    width: 100%;
+    height: 64rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-urbanist);
+  }
+  
