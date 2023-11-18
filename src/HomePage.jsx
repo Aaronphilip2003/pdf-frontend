@@ -17,7 +17,9 @@ const HomePage = () => {
       <h1 className={styles.fluentify}>Fluentify</h1>
       <h2 className={styles.quizzesLiteratureReviewContainer}>
         <ul className={styles.quizzes}>
-          <li className={styles.quizzes1}>Quizzes</li>
+        <li className={`${styles.quizzes1} hover:underline cursor-pointer`}>
+          <Link to="https://mern-attendance-client.vercel.app/" target="_blank">Attendance Tracker</Link>
+        </li>
         </ul>
         <p className={styles.blankLine}>&nbsp;</p>
         <ul className={styles.quizzes}>
@@ -34,7 +36,7 @@ const HomePage = () => {
         </ul>
         <p className={styles.blankLine}>&nbsp;</p>
         <ul className={styles.quizzes}>
-          <li className={styles.quizzes1}>Pronounciations</li>
+          
         </ul>
       </h2>
       <div className={styles.text} />

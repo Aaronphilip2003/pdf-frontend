@@ -6,6 +6,7 @@ import EightyChatComponent from "./components/EightyChatComponent";
 import JHChatComponent from "./components/JHChatComponent";
 import MOVChatComponent from "./components/MOVChatComponent";
 import NasaChatComponent from "./components/NasaChatComponent";
+import YTChatComponent from "./components/YTChatComponent";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function ChatsPage() {
@@ -75,6 +76,14 @@ function ChatsPage() {
           >
             Nasa
           </li>
+          <li
+            onClick={() => handleChatClick("YT")}
+            className={`p-4 cursor-pointer hover:bg-gray-300 ${
+              activeChat === "YT" && "bg-gray-300"
+            }`}
+          >
+            YouTube
+          </li>
         </ul>
       </div>
       <div className="w-3/4 bg-white">
@@ -89,6 +98,7 @@ function ChatsPage() {
           {activeChat === "JH" && <JHChatComponent />}
           {activeChat === "MOV" && <MOVChatComponent />}
           {activeChat === "Nasa" && <NasaChatComponent />}
+          {activeChat === "YT" && <YTChatComponent />}
         </div>
       </div>
     </div>
